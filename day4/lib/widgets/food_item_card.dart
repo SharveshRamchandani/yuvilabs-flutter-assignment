@@ -23,8 +23,8 @@ class FoodItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 188.0,
-      padding: const EdgeInsets.fromLTRB(18.0, 10.0, 18.0, 14.0),
+      height: 212.0,
+      padding: const EdgeInsets.fromLTRB(18.0, 14.0, 18.0, 16.0),
       decoration: BoxDecoration(
         color: backgroundColor,
         borderRadius: BorderRadius.circular(26.0),
@@ -41,13 +41,13 @@ class FoodItemCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           _buildHeader(),
-          const SizedBox(height: 10.0),
+          const SizedBox(height: 20.0),
           _buildMetric(
             value: '$calories',
             label: 'Calories',
             accentColor: caloriesAccent,
           ),
-          const SizedBox(height: 12.0),
+          const SizedBox(height: 22.0),
           _buildMetric(
             value: carbs,
             label: 'Carbs',
@@ -64,20 +64,20 @@ class FoodItemCard extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Transform.translate(
-          offset: const Offset(2.0, 4.0),
+          offset: const Offset(-2.0, 4.0),
           child: Text(
             title,
             style: AppTypography.foodCardTitle.copyWith(
               fontWeight: FontWeight.w600,
             ),
           ),
-        ),
+        ), 
         const Padding(
           padding: EdgeInsets.only(top: 4.0, right: 4.0),
           child: Icon(
             LucideIcons.ellipsisVertical,
             size: 16.0,
-            color: Color(0xFF111111),
+            color: Color.fromARGB(255, 255, 249, 249),
           ),
         ),
       ],
@@ -118,7 +118,7 @@ class FoodItemCard extends StatelessWidget {
       width: 8.0,
       height: 42.0,
       decoration: BoxDecoration(
-        color: const Color(0xFFECECEC),
+        color: const Color.fromARGB(255, 255, 255, 255),
         borderRadius: BorderRadius.circular(4.0),
       ),
       child: Stack(

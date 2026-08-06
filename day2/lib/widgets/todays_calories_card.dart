@@ -234,7 +234,7 @@ class CaloriesTrendPainter extends CustomPainter {
     // Coordinates adjusted per specifications:
     // Peak height reduced by 4px, final segment extended by 8px rightward
     final p0 = Offset(0.0, size.height * 0.88);
-    final p1 = Offset(size.width * 0.25, size.height * 0.62); 
+    final p1 = Offset(size.width  * 0.25, size.height * 0.62); 
     final v1 = Offset(size.width * 0.42, size.height * 0.74); 
     final p2 = Offset(size.width * 0.72, size.height * 0.12 + 4.0); // Peak height -4px
     final p3 = Offset(size.width + 8.0, size.height * 0.60 + 4.0);   // Extended +8px

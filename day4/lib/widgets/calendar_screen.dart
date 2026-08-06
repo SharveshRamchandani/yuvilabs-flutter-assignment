@@ -21,7 +21,7 @@ class CalendarScreen extends StatelessWidget {
         gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [AppColors.backgroundTop, AppColors.backgroundBottom],
+          colors: [AppColors.backgroundTop, Color.fromARGB(255, 103, 48, 48)],
         ),
       ),
       child: Scaffold(
@@ -112,7 +112,7 @@ class CalendarScreen extends StatelessWidget {
         ),
         child: Center(
           child: SvgPicture.asset(
-            'assets/icons/back_arrow.svg',
+            'assets/icons/backarrow.svg',
             width: 24,
             height: 24,
             colorFilter: const ColorFilter.mode(
